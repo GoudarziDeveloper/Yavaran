@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/accountParent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackgroundMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/accountImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/user_image"
+            android:tag="def"
+            app:civ_border_color="@color/nextBtn"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/accountFirstName"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="10"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountFirstNameTitle" />
+
+        <TextView
+            android:id="@+id/accountFirstNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="نام(الزامی):"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/accountPhone" />
+
+        <TextView
+            android:id="@+id/accountLastNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="نام خانوادگی(الزامی):"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountLastName"
+            app:layout_constraintTop_toBottomOf="@+id/accountFirstName" />
+
+        <EditText
+            android:id="@+id/accountLastName"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="15"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountLastNameTitle" />
+
+        <TextView
+            android:id="@+id/accountPhoneTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="شماره همراه:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountPhone"
+            app:layout_constraintTop_toBottomOf="@+id/accountImage" />
+
+        <EditText
+            android:id="@+id/accountPhone"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="11"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountPhoneTitle" />
+
+        <TextView
+            android:id="@+id/accountEmailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ایمیل(اختیاری)"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountEmail"
+            app:layout_constraintTop_toBottomOf="@+id/accountLastName" />
+
+        <EditText
+            android:id="@+id/accountEmail"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="30"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountEmailTitle" />
+
+        <TextView
+            android:id="@+id/accountNationalCodeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="کد ملی(اختیاری برای برسی نیازمندی)"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountNationalCode"
+            app:layout_constraintTop_toBottomOf="@+id/accountEmail" />
+
+        <EditText
+            android:id="@+id/accountNationalCode"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="10"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountNationalCodeTitle" />
+
+        <TextView
+            android:id="@+id/accountPostalCodeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="کد پستی(اختیاری):"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountPostalCode"
+            app:layout_constraintTop_toBottomOf="@+id/accountNationalCode" />
+
+        <EditText
+            android:id="@+id/accountPostalCode"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="10"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountPostalCodeTitle" />
+
+        <TextView
+            android:id="@+id/accountStateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="استان(اختیاری):"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountState"
+            app:layout_constraintTop_toBottomOf="@+id/accountPostalCode" />
+
+        <EditText
+            android:id="@+id/accountState"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="20"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountStateTitle" />
+
+        <TextView
+            android:id="@+id/accountCityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="شهر(اختیاری):"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountCity"
+            app:layout_constraintTop_toBottomOf="@+id/accountState" />
+
+        <EditText
+            android:id="@+id/accountCity"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:maxLength="20"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountCityTitle" />
+
+        <TextView
+            android:id="@+id/accountAdressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ادرس(اختیاری):"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/accountAdress"
+            app:layout_constraintTop_toBottomOf="@+id/accountCity" />
+
+        <EditText
+            android:id="@+id/accountAdress"
+            style="@style/EditTextStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="100"
+            android:minHeight="100dp"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountAdressTitle" />
+
+        <Button
+            android:id="@+id/accountBtnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="ذخیره"
+            android:theme="@style/nextBtnStyle"
+            app:layout_constraintEnd_toStartOf="@+id/accountBtnCancel"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/accountAdress"
+            app:layout_constraintTop_toBottomOf="@+id/map" />
+
+        <Button
+            android:id="@+id/accountBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="انصراف"
+            android:theme="@style/stayBtnStyle"
+            app:layout_constraintEnd_toEndOf="@+id/accountAdress"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/accountBtnSave"
+            app:layout_constraintTop_toBottomOf="@+id/map" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="@+id/accountImage"
+            app:layout_constraintEnd_toEndOf="@+id/accountImage"
+            app:layout_constraintStart_toStartOf="@+id/accountImage"
+            app:layout_constraintTop_toTopOf="@+id/accountImage"
+            app:srcCompat="@drawable/select_pic" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/accountAdress"
+            app:layout_constraintStart_toStartOf="@+id/accountAdress"
+            app:layout_constraintTop_toBottomOf="@+id/accountAdress"></fragment>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

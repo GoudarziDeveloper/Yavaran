@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/addToGetHelpImage2"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/addToGetHelpImage1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/place_holder" />
+
+        <ImageView
+            android:id="@+id/addToGetHelpImage1"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/addToGetHelpImage2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/addToGetHelpImageAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/place_holder" />
+
+        <ImageView
+            android:id="@+id/addToGetHelpImageAdd"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/addToGetHelpImage1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/add_image_icon" />
+
+        <ImageView
+            android:id="@+id/addToGetHelpImage5"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/addToGetHelpImage4"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpImage2"
+            app:srcCompat="@drawable/place_holder" />
+
+        <ImageView
+            android:id="@+id/addToGetHelpImage4"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/addToGetHelpImage5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/addToGetHelpImage3"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpImage1"
+            app:srcCompat="@drawable/place_holder" />
+
+        <ImageView
+            android:id="@+id/addToGetHelpImage3"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/addToGetHelpImage4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpImageAdd"
+            app:srcCompat="@drawable/place_holder" />
+
+        <Spinner
+            android:id="@+id/addToGetHelpCategory"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@drawable/edit_text_shape"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpCategoryTitle" />
+
+        <TextView
+            android:id="@+id/addToGetHelpCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="نوع اگهی:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpCategory"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpImage4" />
+
+        <View
+            android:id="@+id/addToGetHelpurgencyHolder"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpCategory" />
+
+        <TextView
+            android:id="@+id/addToGetHelpUrgencyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="میزان فوریت:"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpurgencyHolder"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpurgencyHolder"
+            app:layout_constraintTop_toTopOf="@+id/addToGetHelpurgencyHolder" />
+
+        <RadioGroup
+            android:id="@+id/addToGetHelpUrgency"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/addToGetHelpurgencyHolder"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpurgencyHolder"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpurgencyHolder"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpUrgencyTitle">
+
+            <RadioButton
+                android:id="@+id/addToGetHelpUrgencyLow"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="5"
+                android:text="کم"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/addToGetHelpUrgencyMediom"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="5"
+                android:checked="true"
+                android:text="متوسط"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/addToGetHelpUrgencyfast"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="5"
+                android:text="مهم"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/addToGetHelpUrgencyVeryFast"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="5"
+                android:text="اضطراری"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/addToGetHelpSecretHolder"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpurgencyHolder" />
+
+        <TextView
+            android:id="@+id/addToGetHelpSecretTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="درخواست از:"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintTop_toTopOf="@+id/addToGetHelpSecretHolder" />
+
+        <RadioGroup
+            android:id="@+id/addToGetHelpSecret"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpSecretTitle">
+
+            <RadioButton
+                android:id="@+id/addToGetHelpSecretPeople"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:checked="true"
+                android:text="مردم"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/addToGetHelpSecretMunicipality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="شهرداری"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/addToGetHelpSecretHelpers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="خیرین"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/addToGetHelpSecretOthers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="سایر"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/addToGetHelpTitleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="عنوان اگهی:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpSecretHolder" />
+
+        <EditText
+            android:id="@+id/addToGetHelpTitle"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpSecretHolder"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpTitleTitle" />
+
+        <EditText
+            android:id="@+id/addToGetHelpShortDescreption"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="110dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:maxLength="150"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpTitle"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpShortDescreptionTitle"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpShortDescreptionTitle" />
+
+        <TextView
+            android:id="@+id/addToGetHelpShortDescreptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="توضیحات کوتاه:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpTitle"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpTitle" />
+
+        <TextView
+            android:id="@+id/addToGetHelpDescreptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="توضیحات:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpShortDescreption"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpShortDescreption" />
+
+        <EditText
+            android:id="@+id/addToGetHelpDescreption"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:minHeight="250dp"
+            android:maxLength="1000"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpShortDescreption"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpShortDescreption"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpDescreptionTitle" />
+
+        <Button
+            android:id="@+id/addToGetHelpBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="انصراف"
+            android:theme="@style/stayBtnStyle"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpDescreption"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/addToGetHelpBtnSave"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpDescreption" />
+
+        <Button
+            android:id="@+id/addToGetHelpBtnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="ثبت اگهی"
+            android:theme="@style/nextBtnStyle"
+            app:layout_constraintEnd_toStartOf="@+id/addToGetHelpBtnCancel"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpDescreption"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpDescreption" />
+
+        <ProgressBar
+            android:id="@+id/addToGetHelpSavePB"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/addToGetHelpBtnCancel"
+            app:layout_constraintStart_toStartOf="@+id/addToGetHelpBtnSave"
+            app:layout_constraintTop_toBottomOf="@+id/addToGetHelpBtnSave" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

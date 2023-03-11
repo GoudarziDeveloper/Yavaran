@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbarMain"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:background="@color/colorBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:id="@+id/toolbarBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/colorBackground"
+        android:src="@drawable/back"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:paddingStart="30dp"
+        android:textSize="18sp"
+        android:paddingTop="6dp"
+        android:text="صفحه اصلی"
+        android:textAlignment="center"
+        tools:ignore="RtlSymmetry" />
+
+</androidx.appcompat.widget.Toolbar>

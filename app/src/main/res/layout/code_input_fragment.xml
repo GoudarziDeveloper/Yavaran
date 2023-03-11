@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+
+    <TextView
+        android:id="@+id/codeHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        android:text="لطفا کد پیامک شده را وارد کنید"
+        app:layout_constraintBottom_toTopOf="@+id/codeInput"
+        app:layout_constraintEnd_toEndOf="@+id/codeInput"
+        app:layout_constraintStart_toStartOf="@+id/codeInput" />
+
+    <Button
+        android:id="@+id/codeAgain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="ارسال مجدد"
+        android:theme="@style/stayBtnStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/codeInput"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/codeNext"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <Button
+        android:id="@+id/codeNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="بعدی"
+        android:theme="@style/nextBtnStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/codeAgain"
+        app:layout_constraintEnd_toStartOf="@+id/codeAgain"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/codeInput" />
+
+    <EditText
+        android:id="@+id/codeInput"
+        style="@style/EditTextStyle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_shape"
+        android:layout_marginBottom="4dp"
+        android:padding="6dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/codeAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/codeChangeMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:text="ویرایش شماره تلفن همراه"
+        app:layout_constraintEnd_toEndOf="@+id/codeAgain"
+        app:layout_constraintStart_toStartOf="@+id/codeNext"
+        app:layout_constraintTop_toBottomOf="@+id/codeAgain" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/codeHelp"
+        app:layout_constraintEnd_toEndOf="@+id/codeInput"
+        app:layout_constraintStart_toStartOf="@+id/codeInput"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yavaran_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

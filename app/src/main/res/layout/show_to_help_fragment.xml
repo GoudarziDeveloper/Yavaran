@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/showToHelpSlider"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/editTextBackColor"
+            app:circularflow_angles="@string/hide_bottom_view_on_scroll_behavior"
+            app:circularflow_defaultAngle="@integer/material_motion_duration_long_1"
+            app:circularflow_defaultRadius="20dp"
+            app:circularflow_radiusInDP="20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/showToHelpTitleHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpTitleBtnInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpTitle" />
+
+        <TextView
+            android:id="@+id/showToHelpTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:maxLines="2"
+            style="@style/veryBigText"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpTitleHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpTitleHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpSlider"
+            tools:text="نیازمند یک کارگر جهت تعمیرات خانه" />
+
+        <TextView
+            android:id="@+id/showToHelpDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="تاریخ ثبت:"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpTitle"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpTitle" />
+
+        <View
+            android:id="@+id/showToHelpStatusHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpStatusTitle"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpTitleHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpTitleHolder"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpStatusTitle" />
+
+        <TextView
+            android:id="@+id/showToHelpStatusTitle"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="وضعیت اگهی:"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpStatusHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpTitleHolder" />
+
+        <TextView
+            android:id="@+id/showToHelpStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            tools:text="حل نشده"
+            style="@style/bigText"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpStatusTitle"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpStatusHolder"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpStatusTitle" />
+
+        <View
+            android:id="@+id/showToHelpCategoryHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpCategoryTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpCategoryTitle" />
+
+        <TextView
+            android:id="@+id/showToHelpCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            style="@style/bigText"
+            android:text="نوع اگهی:"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpStatusHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpStatusHolder" />
+
+        <TextView
+            android:id="@+id/showToHelpCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            tools:text="خانه"
+            style="@style/bigText"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpCategoryTitle"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpCategoryHolder"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpCategoryTitle" />
+
+        <View
+            android:id="@+id/showToHelpShortDesceriptionHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpShortDescription"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpCategoryHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpCategoryHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpCategoryHolder" />
+
+        <View
+            android:id="@+id/showToHelpShortDescriptionHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpShortDescription"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpCategoryHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpCategoryHolder"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpShortDescriptionTitle" />
+
+        <TextView
+            android:id="@+id/showToHelpShortDescriptionTitle"
+            style="@style/veryBigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="توضیحات کوتاه:"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpCategoryHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpCategoryHolder" />
+
+        <TextView
+            android:id="@+id/showToHelpShortDescription"
+            style="@style/bigText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpShortDesceriptionHolder"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpShortDescriptionTitle"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpShortDescriptionTitle"
+            tools:text="ما به یک کارگر جهت تعمیرات خانه نیازمندیم." />
+
+        <View
+            android:id="@+id/showToHelpDescriptionHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpDescription"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpShortDesceriptionHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpShortDesceriptionHolder"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpDescriptionTitle" />
+
+        <TextView
+            android:id="@+id/showToHelpDescriptionTitle"
+            style="@style/veryBigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="توضیحات کامل:"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpShortDesceriptionHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpShortDescriptionHolder" />
+
+        <TextView
+            android:id="@+id/showToHelpDescription"
+            style="@style/bigText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpDescriptionHolder"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpDescriptionTitle"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpDescriptionTitle"
+            tools:text="ما چند وقتی است سقف خانمان نم داده است و نیازمند کمک های مردی جهت بازسازی سقف خانه هستیم." />
+
+        <View
+            android:id="@+id/showToHelpOtherHolder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/edit_text_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpOther"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpDescriptionHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpDescriptionHolder"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpOtherTitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/showToHelpOther"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpDescriptionHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpDescriptionHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpOtherTitle" />
+
+        <TextView
+            android:id="@+id/showToHelpOtherTitle"
+            style="@style/veryBigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="آگهی های مشابه:"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpDescriptionHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpDescriptionHolder" />
+
+        <ProgressBar
+            android:id="@+id/showToHelpOtherPB"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/showToHelpOtherTitle"
+            app:layout_constraintStart_toEndOf="@+id/showToHelpOtherTitle"
+            app:layout_constraintTop_toTopOf="@+id/showToHelpOtherTitle" />
+
+        <Button
+            android:id="@+id/showToHelpTitleBtnInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="اطلاعات تماس"
+            android:theme="@style/nextBtnStyle"
+            app:layout_constraintEnd_toEndOf="@+id/showToHelpTitleHolder"
+            app:layout_constraintStart_toStartOf="@+id/showToHelpTitleHolder"
+            app:layout_constraintTop_toBottomOf="@+id/showToHelpDate" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

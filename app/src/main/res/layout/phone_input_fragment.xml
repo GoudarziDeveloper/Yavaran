@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        style="@style/EditTextStyle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@drawable/edit_text_shape"
+        android:ems="10"
+        android:maxLength="11"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/phoneNextBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/nextBtnStyle"
+        android:textColorHint="@color/white"
+        android:maxLength="11"
+        android:hint="ارسال کد فعال سازی"
+        android:paddingBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumberInput"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberInput"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="لطفا شماره تلفن همراه خود را وارد کنید"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumberInput"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumberInput"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberInput" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumberInput"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberInput"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yavaran_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
